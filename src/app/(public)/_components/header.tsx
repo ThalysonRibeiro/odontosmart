@@ -85,11 +85,11 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[240px] sm:w-[300px] z-[9999]">
             <SheetTitle className="mt-2 ml-2">Menu</SheetTitle>
-            <SheetHeader></SheetHeader>
-            <SheetDescription className="ml-2">
+            {/* <SheetHeader></SheetHeader> */}
+            {/* <SheetDescription className="ml-2">
               Veja nossos links
-            </SheetDescription>
-            <nav className="flex flex-col space-y-4 mt-6 p-6">
+            </SheetDescription> */}
+            <nav className="flex flex-col items-center border-t space-y-4 mt-6 p-6">
               <NavLinks />
             </nav>
           </SheetContent>
