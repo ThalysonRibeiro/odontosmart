@@ -96,7 +96,7 @@ export function ProfileContent({ user }: ProfileContentProps) {
     const response = await updateProfile({
       name: values.name,
       address: values.address,
-      status: values.status === 'Active' ? true : false,
+      status: values.status === 'active' ? true : false,
       phone: values.phone,
       timeZone: values.timeZone,
       times: selectedHours || []
