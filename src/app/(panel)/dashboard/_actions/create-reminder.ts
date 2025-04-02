@@ -3,7 +3,7 @@
 import { auth } from "@/lib/auth";
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
-import { date, z } from "zod"
+import { z } from "zod"
 
 const formSchema = z.object({
   description: z.string().min(1, "A descrição do lembrete é obrtigatório")

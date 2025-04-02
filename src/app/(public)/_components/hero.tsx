@@ -5,7 +5,7 @@ import doctorImg from '../../../../public/doctor-hero.png'
 export function Hero() {
   return (
     <section className="bg-blue-50">
-      <div className="container mx-auto px-4 pb-4 pt-20 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 pt-20 sm:px-6 lg:px-8">
 
         <main className="flex items-center justify-center">
 
