@@ -14,6 +14,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useState } from "react";
 import { handleRegister } from "../_actions/login";
+import Image from "next/image";
 
 export function Header() {
   const { data: session, status } = useSession();
@@ -26,7 +27,7 @@ export function Header() {
   ];
 
   async function handleLogin() {
-    await handleRegister("github")
+    await handleRegister("google")
   }
 
   const NavLinks = () => (
@@ -46,11 +47,13 @@ export function Header() {
       {status === 'loading' ? (
         <></>
       ) : session ? (
-        <Link href="/dashboard"
-          className="flex items-center justify-center gap-2 text-white bg-gradient-to-bl from-blue-600 to-indigo-500 transition-colors duration-300 hover:from-indigo-600 hover:to-blue-500 w-fit py-1 px-4 font-semibold rounded-md"
-        >
-          Acessar clinica
-        </Link>
+        <div>
+          <Link href="/dashboard"
+            className="flex items-center justify-center gap-2 text-white bg-gradient-to-bl from-blue-600 to-indigo-500 transition-colors duration-300 hover:from-indigo-600 hover:to-blue-500 w-fit py-1 px-4 font-semibold rounded-md"
+          >
+            Acessar clinica
+          </Link>
+        </div>
       ) : (
         <Button onClick={handleLogin}
           className="text-white bg-gradient-to-bl from-blue-600 to-indigo-500 transition-colors duration-300 hover:from-indigo-600 hover:to-blue-500 w-fit py-1 px-4 font-semibold rounded-md"

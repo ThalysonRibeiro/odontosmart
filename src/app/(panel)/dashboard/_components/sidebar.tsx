@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import clsx from "clsx";
-import { Banknote, CalendarCheck2, ChevronLeft, ChevronRight, Folder, List, Settings } from "lucide-react";
+import { Banknote, BarChart, CalendarCheck2, ChevronLeft, ChevronRight, FileText, Folder, List, Settings } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation"
@@ -68,6 +68,13 @@ export function SidebarDashboard({ children, }: { children: React.ReactNode }) {
               icon={<Folder className="w-6 h-6" />}
             />
             <SideBarLink
+              href="/dashboard/reports"
+              label="Relatorios"
+              pathname={pathname}
+              isCollapsed={isCollapsed}
+              icon={<FileText className="w-6 h-6" />}
+            />
+            <SideBarLink
               href="/dashboard/profile"
               label="Meu perfil"
               pathname={pathname}
@@ -103,6 +110,13 @@ export function SidebarDashboard({ children, }: { children: React.ReactNode }) {
                 pathname={pathname}
                 isCollapsed={isCollapsed}
                 icon={<Folder className="w-6 h-6" />}
+              />
+              <SideBarLink
+                href="/dashboard/reports"
+                label="Relatorios"
+                pathname={pathname}
+                isCollapsed={isCollapsed}
+                icon={<FileText className="w-6 h-6" />}
               />
 
               <span className="text-sm text-gray-400 font-medium mt-1 uppercase">
@@ -169,6 +183,13 @@ export function SidebarDashboard({ children, }: { children: React.ReactNode }) {
                   pathname={pathname}
                   isCollapsed={isCollapsed}
                   icon={<Folder className="w-6 h-6" />}
+                />
+                <SideBarLink
+                  href="/dashboard/reports"
+                  label="Relatorios"
+                  pathname={pathname}
+                  isCollapsed={isCollapsed}
+                  icon={<FileText className="w-6 h-6" />}
                 />
                 <SideBarLink
                   href="/dashboard/profile"

@@ -107,7 +107,9 @@ export function AppointmentsList({ times }: ApointmentsListProps) {
         <CardContent>
           <ScrollArea className="h-[calc(100vh-20rem)] md:h-[calc(100vh-15rem)] pr-4">
             {isLoading ? (
-              <p>Carregando agenda...</p>
+              <div className="flex justify-center items-center h-[calc(100vh-20rem)] md:h-[calc(100vh-15rem)]">
+                <div className="w-10 h-10 border-5 border-t-5 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
+              </div>
             ) : (
               times.map((slot) => {
                 const occupant = occupantMap[slot];

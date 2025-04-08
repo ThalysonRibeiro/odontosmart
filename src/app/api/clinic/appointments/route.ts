@@ -67,4 +67,4 @@ export const GET = auth(async function GET(request) {
       }
     )
   }
-})
+}) as any;

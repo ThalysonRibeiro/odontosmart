@@ -41,7 +41,7 @@ export function ReminderList({ reminder }: ReminderListProps) {
 
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
-              <Button variant="ghost" className="w-9 p-0">
+              <Button className="w-9 p-0">
                 <Plus className="w-5 -h-5" />
               </Button>
             </DialogTrigger>

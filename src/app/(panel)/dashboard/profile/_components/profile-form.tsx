@@ -28,7 +28,7 @@ export function UseProfileForm({ name, address, phone, status, timeZone }: UserP
       name: name || '',
       address: address || '',
       phone: phone || '',
-      status: status ? 'Active' : 'Inactive',
+      status: status ? "active" : "inactive",
       timeZone: timeZone || '',
     }
   })
