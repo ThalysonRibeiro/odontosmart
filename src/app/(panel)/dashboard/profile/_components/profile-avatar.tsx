@@ -5,7 +5,6 @@ import { ChangeEvent, useState } from "react";
 import imgtest from "../../../../../../public/foto1.png";
 import { Loader, Upload } from "lucide-react";
 import { toast } from "sonner";
-import { json } from "body-parser";
 import { updateProfileAvatar } from "../_actions/update-avatar";
 import { useSession } from "next-auth/react";
 
